@@ -1,0 +1,124 @@
+*{
+		box-sizing: border-box;
+	}
+	h1 {
+		margin-bottom: 15px;
+	}
+	p {
+		border: 1px solid black;
+		width: 90px;
+		height: 150px;
+		margin-right: auto;
+		margin-left: auto;
+		font-family: helvetica;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		background-color:lightblue;
+		padding: 5px;
+	
+	}
+div{
+	background-color:gray;
+	border: 1px solid black;
+	position: relative;
+	padding: 5PX;
+	margin-top: 5px;
+	border-radius: 10px;
+}
+div>p{
+	float: right;
+	height: 50px;
+	top: -5px;
+
+}
+	.containerbox{
+		float: left;
+		border: 1px solid black;
+	}
+	#p1{
+		top:5px;
+		width: 80%;
+		height: 150px;
+		left: 10%;
+
+	}
+	   #p2{
+	   	top: 10px;
+	   	width: 80%;
+	   	left: 10%;
+	   	height: 150px;
+
+	   }
+	   #p3{
+	   	top: 15px;
+	   	width: 80%;
+	   	left: 10%;
+	   	height: 150px;
+	   }
+	   #p11{
+	   	position: absolute;
+	   	top: -15px;
+	   	right: 5px;
+	   	height: 80px;
+	   }
+	   #p12{
+	   	position: absolute;
+	   	top: -15px;
+	   	right: 5px;
+	   	height: 80px;
+	   }
+	   #p13{
+	   	
+	    position: absolute;
+	   	top: -15px;
+	   	right: 5px;
+	   	height: 80px;
+	   }
+	  @media (min-width: 1200px)
+	  {
+	  	.containerbox{
+	  		float: left;
+	  		border: 1px solid black;
+	  		top: 200px;
+	  	}
+	  	
+	  #p1{
+	  	width: 25%;
+	  	height: 300px;
+	  	left: 10%;
+	  }
+	  #p2{
+	  	width: 25%;
+	  	left: 13%;
+	  	height: 300px;
+	  }
+	  #p3{
+	  	width: 25%;
+	  	left: 17%;
+	  	height: 300px;
+	  }
+	  }
+	  @media (min-width: 950px) and (max-width: 1199px)
+	  {
+	  	.containerbox{
+	  		border: 1px solid black;
+	  	}
+	 
+	  	#p1{
+	  		width: 35%;
+	  		height: 300px;
+	  		left: 10%;
+	  	}
+	  	#p2{
+	  		width: 35%;
+	  		height: 300px;
+	  		left: -13%;
+	  		float: right;
+	  	}
+	  	#p3{
+	  		width: 78%;
+	  		left: 10%;
+	  		top: 50px;
+	  		height: 300px;
+	  	}
+	    }
