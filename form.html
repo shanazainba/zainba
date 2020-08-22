@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>form using javascript</title>
+
+</head> 
+<body>
+    <style type="text/css">
+        body{
+            text-align: center;
+            background-color:lightblue; ;
+        }
+        form{
+            background-color:white ;
+            border: 5px red;
+            text-align: center;
+            grid-row-gap: 20px;
+        }
+    </style>
+    <h2>FILL UP</h2>
+<form name="myForm" action=# method="POST" onsubmit="validate();">
+    <br>
+    <br>
+    Name:<input type="text" name="name">
+    <br><BR>
+     Age:<input type="number" name="age">
+     <br><br>
+      mobile no:<input type="number" name="number" size="10">
+      <br><br>
+       Email:<input type="email" name="email">
+       <br><br>
+       <input type="submit" name="submit" value="submit">
+       <br><br>
+ </form>
+ <script type="text/javascript">
+
+     function validate() {
+         var name=document.myForm.name.value;
+         var age=document.myForm.age.value;
+         var number=document.myForm.number.value;
+         var email=document.myForm.email.value;
+         var submit=document.myForm.submit.value;
+         if(name=="")
+            alert("name field cannot left blank");
+         else if(isNaN(age))
+            alert("age should be a number");
+        else if(isNaN(number)||number.length!=10)
+            alert("mobile number should be 10 digit number");
+        else if(validate_email(email));
+        else
+            alert("submitted succefuly");
+     function validate_email(email) {
+         var atpos=email.indexOf("@");
+         var dotpos=email.indexOf(".");
+     }
+ </script>
+</body>
+</html>
