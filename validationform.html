@@ -1,0 +1,32 @@
+<html>
+<body>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+var age=document.myform.age.value;
+var email=document.myform.email.value;    
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }else if (isNaN(age) || age=="") {
+  	alert("enter the valid age");
+  	return false;
+  }else if (email=="" || email=="null") {
+  	return false;
+  }
+}  alert("submitted succesfully");
+</script>  
+<body>  
+<form name="myform" method="post" action="new.html" onsubmit="return validateform()" >  
+Name: <input type="text" name="name" required><br>  
+Password: <input type="password" name="password" required><br>
+age: <input type="number" name="age" required> <BR> 
+email:<input type="email" size="30" required >
+<input type="submit" value="register">  
+</form>  
+</body>
+</html>
